@@ -1,0 +1,82 @@
+:root{
+    --red:  #ca2424f3;
+    --white: #ffffff;
+    --blue: #1267d0;
+}
+
+/* .roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+*{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button{
+    height: 36px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+#subscribe{
+    color: var(--white);
+    background: var(--red);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+}
+
+#subscribe:hover{
+    opacity: 0.8;
+}
+
+#subscribe:active{
+    opacity: 0.5;
+}
+
+#join{
+    color: var(--blue);
+    background: var(--white);
+    border: 1px solid var(--blue);
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background 0.15s, color 0.15s, border 0.15s;
+}
+
+#join:hover{
+    color: var(--white);
+    background: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+#tweet{
+    color: var(--white);
+    background: var(--blue);
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    transition: box-shadow 0.15s;
+}
+
+#tweet:hover{
+    /* opacity: 0.8; */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
